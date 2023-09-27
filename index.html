@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Responsive Slider 2</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imagen/imag1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagen/imag2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagen/imag3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagen/imag4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagen/imag5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagen/imag6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagen/imag7.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagen/imag8.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagen/imag9.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagen/imag10.jpg" alt=""></div>
+        </div>
+    <div class="swiper-pagination"></div>
+  </div>
+   
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows : true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnIntection: false,
+      },
+    });
+  </script>
+</body>
+</html>
